@@ -1,0 +1,54 @@
+airbears2-10-142-58-184:RPS michael$ python main.py 
+player 1: human or cpu?
+human
+player 2: human or cpu?
+cpu
+how many games?
+10
+choose a move
+s  
+tie
+
+choose a move
+p
+tie
+
+choose a move
+p
+tie
+
+choose a move
+r
+player 1 wins
+
+choose a move
+s
+player 1 wins
+
+choose a move
+s
+player 1 wins
+
+choose a move
+p
+player 1 wins
+
+choose a move
+r
+player 2 wins
+
+choose a move
+
+error: need a valid response, valid responses: ['r', 'p', 's', 'rock', 'paper', 'scissors']
+choose a move
+s
+player 1 wins
+
+choose a move
+p
+player 2 wins
+
+p1 wins: 5
+p2 wins: 2
+draws: 3
+airbears2-10-142-58-184:RPS michael$ 
