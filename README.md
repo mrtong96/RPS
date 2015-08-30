@@ -1,7 +1,7 @@
 
 ### Overview ###
 
-This is a bot that can run and play a set number of Rock Paper Scissors (RPS) games. This bot tries to predict what it's opponent will play in order to maximize its winning percentage.
+This is a bot that can run and play a set number of Rock Paper Scissors (RPS) games. This bot tries to predict what its opponent will play in order to maximize its winning percentage.
 
 ### Instructions for Playing ###
 
