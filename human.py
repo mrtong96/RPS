@@ -7,14 +7,6 @@ class Human():
 
     # gamestate variable not used, for compatibility with CPU method
     def choose_move(self, gamestate):
-        self.counter += 1
-        if self.counter % 3 == 0:
-            return 'r'
-        elif self.counter % 3 == 1:
-            return 's'
-        else:
-            return 'p'
-
         valid_responses = ['r', 'p', 's', 'rock', 'paper', 'scissors']
         while True:
             response = raw_input('choose a move\n')
