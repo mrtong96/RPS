@@ -1,6 +1,6 @@
 
 import random
-from game import GameSet
+from gameset import GameSet
 
 
 def main():
