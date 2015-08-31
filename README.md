@@ -8,7 +8,7 @@ This is a bot that can run and play a set number of Rock Paper Scissors (RPS) ga
 1) Download this repository
 
 ```
-$ git clone git@github.com:mrtong96/RPS.git
+$ git clone https://github.com/mrtong96/RPS.git
 ```
 
 2) Run main.py
