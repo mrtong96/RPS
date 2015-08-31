@@ -33,6 +33,7 @@ $ python main.py
 * This bot was designed to take advantage of the fact that humans are generally not very good at acting randomly and exploit patterns.
 * In general, it takes around 50-100 games before the bot begins to exploit patterns in its human opponents.
 * If the bot plays itself, all of the games except for the first one are draws.
+* You can also use the keys 'q', 'w', and 'e' to play rock, paper, or scissors respectively.
 
 ### Contact ###
 
