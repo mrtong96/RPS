@@ -17,6 +17,7 @@ def main():
     wins, losses, draws = (0, 0, 0)
     results = []
     for i in range(gameSet.num_games):
+        print 'on game {} of {}'.format(i + 1, gameSet.num_games)
         result = gameSet.play_game()
         if result == 1:
             wins += 1
