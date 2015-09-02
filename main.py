@@ -6,12 +6,12 @@ import os
 
 
 def main():
-    outfile = 'rps_data.txt'
+    outfile = 'data/rps_data.txt'
     gameSet = GameSet()
 
     if os.path.isfile(outfile):
         os.remove(outfile)
-    f = open(outfile, 'awr')
+    f = open(outfile, 'a+')
     f.write('p1: {}\np2: {}\n'.format(gameSet.p1.type, gameSet.p2.type))
 
     wins, losses, draws = (0, 0, 0)
@@ -25,7 +25,7 @@ def main():
             draws += 1
         elif result == -1:
             losses += 1
-        f.write('{}, {}\n'.format(result, json.dumps(gameSet.moves[-1])))
+        f.write('{},{},{}\n'.format(result, gameSet.moves[-1][0], gameSet.moves[-1][1]))
 
     f.close()
     print 'p1 wins: {}\np2 wins: {}\ndraws: {}'.format(wins, losses, draws)

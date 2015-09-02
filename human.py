@@ -1,3 +1,4 @@
+
 class Human():
     def __init__(self, player_num):
         self.type = 'human'
