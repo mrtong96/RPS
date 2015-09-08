@@ -62,7 +62,7 @@ for outfile in outfiles:
     for i, el in enumerate(prob_matrix):
         print ('human: {}, cpu: {}, table: {}'.format(INDEX_TO_MOVE[i % 3], INDEX_TO_MOVE[i // 3], el))
 
-    plt.suptitle(outfile)
+    plt.suptitle(outfile + '\n rock=red, paper=blue, scissors=green')
     prob_matrices = zip(*prob_matrices)
     x_values = np.arange(1., float(len(scores)), 1.)
     for i, p_tables in enumerate(prob_matrices):
