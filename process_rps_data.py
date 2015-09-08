@@ -18,7 +18,7 @@ INDEX_TO_MOVE = {0: 'r', 1: 'p', 2: 's'}
 ALPHA = .95
 
 for outfile in outfiles:
-    print 'file name: {}'.format(outfile)
+    print ('file name: {}'.format(outfile))
     wins, losses, draws = (0, 0, 0)
     text = open(outfile, 'r').read()
     text = text.split('\n')
@@ -41,9 +41,9 @@ for outfile in outfiles:
     sizes = [10, 20, 50, 100, 200]
     for size in sizes:
         out = []
-        for i in range(len(scores) / size):
+        for i in range(len(scores) // size):
             out.append(sum(scores[i * size: i * size + size]))
-        print 'overall score for every {} games: {}'.format(size, out)
+        print ('overall score for every {} games: {}'.format(size, out))
     
     prob_matrix = [([1.0 / 3] * 3)[:] for i in range(9)]
     prob_matrices = []
@@ -58,9 +58,9 @@ for outfile in outfiles:
 
         prob_matrices.append(copy.deepcopy(prob_matrix))
 
-    print 'probability matrix'
+    print ('probability matrix')
     for i, el in enumerate(prob_matrix):
-        print 'human: {}, cpu: {}, table: {}'.format(INDEX_TO_MOVE[i % 3], INDEX_TO_MOVE[i / 3], el)
+        print ('human: {}, cpu: {}, table: {}'.format(INDEX_TO_MOVE[i % 3], INDEX_TO_MOVE[i // 3], el))
 
     plt.suptitle(outfile)
     prob_matrices = zip(*prob_matrices)
@@ -68,12 +68,12 @@ for outfile in outfiles:
     for i, p_tables in enumerate(prob_matrices):
         r_list, p_list, s_list = zip(*p_tables)
         human_move = INDEX_TO_MOVE[i % 3]
-        cpu_move = INDEX_TO_MOVE[i / 3]
+        cpu_move = INDEX_TO_MOVE[i // 3]
         plt.subplot(331 + i)
-        plt.title('human: {}, cpu: {}'.format(INDEX_TO_MOVE[i % 3], INDEX_TO_MOVE[i / 3]))
+        plt.title('human: {}, cpu: {}'.format(INDEX_TO_MOVE[i % 3], INDEX_TO_MOVE[i // 3]))
         plt.plot(x_values, r_list, 'ro', x_values, p_list, 'bo', x_values, s_list, 'go')
     plt.show()
 
-    print 'p1: {}\np2: {}\ndraws: {}'.format(wins, losses, draws)
-    print 'total games: {}'.format(wins + losses + draws)
+    print ('p1: {}\np2: {}\ndraws: {}'.format(wins, losses, draws))
+    print ('total games: {}'.format(wins + losses + draws))
 
