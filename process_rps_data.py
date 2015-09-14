@@ -10,6 +10,7 @@ outfiles = [
     'data/rps_data_eric.txt',
     'data/rps_data_michael.txt',
     'data/rps_data_michael2.txt',
+    'data/rps_data_subhodeep.txt',
     'data/rps_data_random.txt'
 ]
 
